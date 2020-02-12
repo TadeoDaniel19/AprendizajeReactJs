@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+	background-color: #23b83c;
+	border: 2px solid #020353;
+	color: whitesmoke;
+	padding: 1em 1.5em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	display: inline-block;
+	width: 22%;
+	border-radius: 5px;
+	box-shadow: 3px 3px 8px 0 #000; /* h-offset v-offset blur spread color */
+}
