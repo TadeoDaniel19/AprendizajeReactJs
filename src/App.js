@@ -10,7 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props) 
     this.state = {
-      counter: 0
+      counter: 0,
+      color: '#FF00FF'
     } 
   }
 
@@ -25,19 +26,23 @@ class App extends Component {
       counter: --this.state.counter
     }) 
   } 
-  
+  onChange = () => {
+    this.setState({ color: '#00FFFF'});
+ }
+
   //Mounting and updating 
   render () {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className="App"  >
+        <header className="App-header" style= {{ backgroundColor: this.state.color}} onClick={this.onChange}>
           <Name name='Tadeo'> </Name>
           <User user='1631113121'></User>
           <ButtonState counter={this.state.counter} />
           <button onClick={this.incrementCounter}> + </button>
           <button onClick={this.decrementCounter}> - </button>
         </header>
-      </div>
+        
+      </div>    
     ) 
   }
 }

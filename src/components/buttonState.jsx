@@ -40,7 +40,7 @@ class ButtonState extends Component {
     console.log("render on!") 
     return (
       <div>
-        Counter value: {this.props.counter}
+        Valor : {this.props.counter}
       </div>
     ) 
   }
